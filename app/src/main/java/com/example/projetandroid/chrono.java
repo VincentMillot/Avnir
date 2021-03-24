@@ -51,7 +51,7 @@ public class chrono extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String choixmachines = parent.getItemAtPosition(position).toString();
                 Toast.makeText(parent.getContext(), "Selected: " + choixmachines, Toast.LENGTH_LONG).show();
-//Recuperation de l'item choisi
+//Recuperation de l'item choisie
                 int index = spinner.getSelectedItemPosition ();
             }
             @Override
