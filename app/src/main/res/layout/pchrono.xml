@@ -8,20 +8,6 @@
     android:background="#FFFFFF"
     tools:context=".chrono">
 
-    <TextView
-        android:id="@+id/titre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="     4V3N!R(free)\nUPGRADE TO PRO"
-        android:textSize="18sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
-
     <Button
         android:id="@+id/pause"
         android:layout_width="45dp"
@@ -117,7 +103,7 @@
         android:id="@+id/total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="00:00"
+        android:text="0:0"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/total_label"
@@ -131,15 +117,16 @@
         android:id="@+id/retour"
         android:layout_width="15dp"
         android:layout_height="31dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/retour"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/titre"
-        app:layout_constraintEnd_toStartOf="@+id/titre"
-        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintBottom_toTopOf="@+id/spinchrono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
         android:id="@+id/spinchrono"
@@ -148,8 +135,8 @@
         app:layout_constraintBottom_toTopOf="@+id/entre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titre"
-        app:layout_constraintVertical_bias="0.548" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
 
     <ImageView
         android:id="@+id/imagechronomachine"

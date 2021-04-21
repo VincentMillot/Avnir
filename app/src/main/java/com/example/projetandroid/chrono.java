@@ -111,7 +111,7 @@ public class chrono extends AppCompatActivity {
                         }
                 });
             }
-        }, 1000, 1000);
+        }, 200, 200);
 
         //Lancer le chrono
         Button lancer = (Button) findViewById(R.id.lancer);
@@ -147,7 +147,7 @@ public class chrono extends AppCompatActivity {
             }
         });
 
-//RETOUR
+        //Retour à la page d'acceuil
             retour = (Button) findViewById(R.id.retour);
             retour.setOnClickListener(new View.OnClickListener() {
                 @Override
